@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<Extern href="stdidcmd.h"/>
+	<Extern href="vsshlids.h"/>
+
+	<Commands package="guidMinimalVSPackage">
+		<Groups>
+			<Group guid="guidMinimalVSPackageCmdSet" id="minimalVSMenuGroup" priority="0x0600">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_VIEW"/>
+			</Group>
+		</Groups>
+
+		<Buttons>
+			<Button guid="guidMinimalVSPackageCmdSet" id="menuVisibilityToogle" priority="0x0100" type="Button">
+				<Parent guid="guidMinimalVSPackageCmdSet" id="minimalVSMenuGroup" />
+				<Strings>
+					<ButtonText>Hide menu</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+	</Commands>
+
+	<KeyBindings>
+		<KeyBinding guid="guidMinimalVSPackageCmdSet" id="menuVisibilityToogle" key1="VK_OEM_3" mod1="Control" editor="guidVSStd97" />
+	</KeyBindings>
+
+	<Symbols>
+		<GuidSymbol name="guidMinimalVSPackage" value="{a1f9205f-bdb8-4707-90af-bd6f484fbc0f}" />
+
+		<GuidSymbol name="guidMinimalVSPackageCmdSet" value="{1901ec3a-bb19-4ff6-a290-084536af3115}">
+			<IDSymbol name="minimalVSMenuGroup" value="0x1020" />
+			<IDSymbol name="menuVisibilityToogle" value="0x0100" />
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>
