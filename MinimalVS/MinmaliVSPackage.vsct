@@ -22,7 +22,7 @@
 	</Commands>
 
 	<KeyBindings>
-		<KeyBinding guid="guidMinimalVSPackageCmdSet" id="menuVisibilityToogle" key1="VK_OEM_3" mod1="Control" editor="guidVSStd97" />
+		<KeyBinding guid="guidMinimalVSPackageCmdSet" id="menuVisibilityToogle" key1="VK_OEM_3" mod1="Control" mod2="Shift" editor="guidVSStd97" />
 	</KeyBindings>
 
 	<Symbols>
